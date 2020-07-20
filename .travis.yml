@@ -13,7 +13,7 @@ deploy:
   edge:true
   skip-cleanup:true
   keep-history:true
-  github-token: $GITHUB_TOKEN
+  github-token: $GitHUB_token
   local-dir: dist/
   target-branch: gh-pages
   commit_message:"Deploy Release"
