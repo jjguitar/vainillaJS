@@ -1,19 +1,26 @@
 import getData from "../utils/getData";
+import getHash from "../utils/getHash";
 
 const Home = async () => {
-  const characters = await getData();
+  const page = await getHash();
+  const characters = await getData(page);
   const view = `
+  <section class="About">
+    <span>All data is provided from <a href="https://rickandmortyapi.com/">Rick and Morty API</a></span>
+  </section>
   <div class="Characters">
-    ${characters.results.map(
-      (character) => `
+    ${characters.results
+      .map(
+        (character) => `
     <article class="Character-item">
       <a href="#/${character.id}/">
-        <img src="${character.image}" alt="${character.name}">
+        <img class="Character-img" src="${character.image}" alt="${character.name}">
         <h2>${character.name}</h2>
       </a>
     </article>
     `
-    ).join('')}
+      )
+      .join("")}
 
   </div>
   `;

@@ -25,6 +25,17 @@ module.exports = {
           loader: "babel-loader", //Utilizar un loader como configuración establecida.
         },
       },
+      {
+        test: /\.(png|gif|jpg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/img/[hash].[ext]'
+            }
+          },
+        ]
+      },
     ],
   },
   plugins: [
