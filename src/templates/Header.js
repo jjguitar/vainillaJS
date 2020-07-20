@@ -1,5 +1,5 @@
 const Header = () => {
-  const view = `d
+  const view = `
   <div class="Header-main">
     <div class="Header-logo">
       <h1>
