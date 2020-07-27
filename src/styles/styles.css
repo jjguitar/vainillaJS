@@ -172,7 +172,7 @@ body {
 
   .Footer-pages div{
     display: grid;
-    grid-template-columns: repeat(15, auto);
+    grid-template-columns: repeat(10, auto);
   }
 
 }
