@@ -280,7 +280,8 @@ input:checked + .slider:before {
 }
 
 .Footer-pages a {
-  margin-right: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   width: 25px;
   border: 1px solid var(--card-background);
 }
