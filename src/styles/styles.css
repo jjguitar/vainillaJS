@@ -170,6 +170,11 @@ body {
   justify-content: center;
   }
 
+  .Footer-pages div{
+    display: grid;
+    grid-template-columns: repeat(15, auto);
+  }
+
 }
 
 .img {
@@ -285,6 +290,5 @@ input:checked + .slider:before {
 }
 
 .Footer-pages div{
-  display: flex;
   justify-content: center;
 }
